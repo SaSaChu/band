@@ -54,7 +54,7 @@ body header nav > ul > li:hover a, body header nav > ul > li.active a { color: b
 body header nav > ul > li.dropmenu { position: relative; }
 @media screen and (min-width: 451px) { body header nav > ul > li.dropmenu:hover ul { display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 5.9rem; padding: 0; margin: 0; width: 100%; list-style: none; }
   body header nav > ul > li.dropmenu:hover ul > li { padding: 1.5rem 0; width: 100%; background-color: #eeeeee; font-weight: 900; }
-  body header nav > ul > li.dropmenu:hover ul > li:hover { color: #2eb6aa; } }
+  body header nav > ul > li.dropmenu:hover ul > li:hover > a { color: #2eb6aa; } }
 body header nav > ul > li.dropmenu .mobile-icon { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { body header nav > ul > li.dropmenu .mobile-icon { display: inline-block; } }
 body header nav > ul > li.dropmenu ul { display: none; }
@@ -98,7 +98,7 @@ body main .container .news .list .list-item .item-content .content { display: no
 body main .container .news .list .list-item .item-content .content p { text-align: left; font-size: 16px; color: #636363; }
 body main .container .events .content { display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content { flex-direction: column; } }
-body main .container .events .content .day { width: 25%; }
+body main .container .events .content .day { width: 24%; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content .day { width: 100%; } }
 body main .container .events .content .day:nth-child(2) > .events-box:nth-child(1) > .title > h2 { margin-left: 3rem; font-size: 22px; }
 body main .container .events .content .day:nth-child(3) > .events-box:nth-child(2) { margin-top: calc(7rem - 24px); }

@@ -17,8 +17,10 @@ $(function() {
     })
 
     $('.dropmenu').on('click', function() {
-        $('.icon-add').toggleClass('icon-remove');
-        $('.dropmenu-items').slideToggle();
+        if($(window).width() <= 450) {
+            $('.icon-add').toggleClass('icon-remove');
+            $('.dropmenu-items').slideToggle();
+        }
     })
 
     $('nav').find('.item').on('click', function() {

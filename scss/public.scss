@@ -322,10 +322,15 @@ body {
 										width: 100%;
 										background-color: rgba(238, 238, 238, 1.00);
 										font-weight: 900;
-										
+
 										&:hover {
-											color: rgba(46, 182, 170, 1.00);
+											> a {
+												color: rgba(46, 182, 170, 1.00);
+											}
 										}
+										
+										
+										
 									}
 								}
 							}
@@ -595,7 +600,7 @@ body {
 
 					.day {
 
-						width: 25%;
+						width: 24%;
 						@include range-width(0, 450px) {
 							width: 100%;
 						}
