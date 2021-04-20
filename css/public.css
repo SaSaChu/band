@@ -1,9 +1,47 @@
 @charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 60px 0; }
+.embed-container.member_share { margin: 0 0 20px 0; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@media screen and (max-width: 769px) and (min-width: 0) { .embed-container { margin: 35px 0; } }
+
+.img-pic { display: inline-block; width: 100%; max-width: 900px; }
+
+.allboxs { display: inline-block; width: 100%; }
+
+.order-l { float: left; }
+
+.order-r { float: right; }
+
+.text-l { text-align: left; }
+
+.text-r { text-align: right; }
+
+.c-blue { color: #2eb6ab; }
+
+.c-black { color: black; }
+
+p { margin: 10px 0; }
+
+.f-24 { font-size: 24px; line-height: 1.5; }
+
+.f-18 { font-size: 18px; line-height: 1.5; }
+
+.f-20 { font-size: 20px; line-height: 1.5; }
+
+.list-18 { display: inline-block; width: 100%; font-size: 18px; line-height: 1.5; padding-left: 35px; position: relative; }
+.list-18:before { display: inline-block; position: absolute; left: 0; content: attr(title); margin-right: 10px; font-size: 18px; }
+
+.list-20 { display: inline-block; width: 100%; font-size: 20px; line-height: 1.5; padding-left: 35px; position: relative; }
+.list-20:before { display: inline-block; position: absolute; left: 0; content: attr(title); margin-right: 10px; font-size: 18px; }
+
+.list-18-2 { display: inline-block; width: 100%; font-size: 18px; line-height: 1.5; padding-left: 70px; position: relative; }
+.list-18-2:before { display: inline-block; position: absolute; left: 0; content: attr(title); margin-right: 10px; font-size: 18px; color: #e33e72; }
+
 html { font-size: 10px; height: 100%; }
 
-body { position: relative; display: inline-block; width: 100%; height: 100%; margin: 0; padding: 0; color: #5a5a5a; background-color: #feef50; font-size: 10px; text-align: center; font-family: "Noto Sans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; -ms-overflow-style: none; }
+body { position: relative; display: inline-block; width: 100%; height: 100%; margin: 0; padding: 0; color: #5a5a5a; background-color: #fff100; font-size: 10px; text-align: center; font-family: "Noto Sans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; -ms-overflow-style: none; }
 body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 body::-webkit-scrollbar { display: none; }
@@ -62,8 +100,8 @@ body header nav > ul > li a { color: white; text-decoration: none; }
 body header nav .mobile-link { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { body header nav .mobile-link { display: flex; flex-direction: column; } }
 body header nav .mobile-menu-img { display: none; }
-body main .container { padding: 2rem 12rem 7rem 12rem; }
-@media screen and (max-width: 449px) and (min-width: 0) { body main .container { padding: 2rem; }
+body main .container { padding: 2rem 0 7rem 0; width: 100%; max-width: 1100px; margin: 0 auto; }
+@media screen and (max-width: 449px) and (min-width: 0) { body main .container { padding: 2rem; max-width: none; }
   body main .container.news { background-color: #eeeeee; padding-bottom: 6rem; }
   body main .container.events { position: relative; } }
 body main .container .index .web-img { margin-top: 4rem; }
@@ -76,11 +114,11 @@ body main .container .index .video iframe { width: 100%; height: 100%; min-width
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .index .video iframe { min-width: 100%; min-height: 100%; } }
 body main .container .news > .title { display: flex; justify-content: space-between; margin-top: 3rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .news > .title { position: relative; flex-direction: column; margin-top: 0; }
-  body main .container .news > .title img { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
-body main .container .news > .title > h2 { margin: 0; font-size: 62px; font-weight: 900; line-height: 1.13; color: #2eb6aa; }
+  body main .container .news > .title img { width: auto; height: auto; max-width: 100%; max-height: 100%; margin-top: 30px; } }
+body main .container .news > .title > h2 { margin: 0; font-size: 62px; font-weight: 900; line-height: 1.13; color: #2eb6aa; text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .news > .title > h2 { font-size: 36px; text-align: left; } }
-body main .container .news > .title > h3 { color: #636363; }
-@media screen and (max-width: 449px) and (min-width: 0) { body main .container .news > .title > h3 { position: absolute; top: 0; right: 0; } }
+body main .container .news > .title > h3 { color: #636363; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { body main .container .news > .title > h3 { display: none; } }
 body main .container .news > .title > h3 a { color: #636363; text-decoration: none; }
 body main .container .news .list { margin-top: 2rem; padding: 4rem 10rem; border-radius: 5px; background-color: white; box-shadow: 10px 10px 1px #2eb6aa; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .news .list { padding: 2.5rem 1.5rem; } }
@@ -100,7 +138,7 @@ body main .container .events .content { display: flex; justify-content: space-be
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content { flex-direction: column; } }
 body main .container .events .content .day { width: 24%; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content .day { width: 100%; } }
-body main .container .events .content .day:nth-child(2) > .events-box:nth-child(1) > .title > h2 { margin-left: 3rem; font-size: 22px; }
+body main .container .events .content .day:nth-child(2) > .events-box:nth-child(1) > .title > h2 { margin-left: 3rem; font-size: 20px; }
 body main .container .events .content .day:nth-child(3) > .events-box:nth-child(2) { margin-top: calc(7rem - 24px); }
 body main .container .events .content .day .events-box { margin-top: 7rem; width: 100%; max-width: 280px; cursor: pointer; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content .day .events-box { margin: 4rem auto 0 auto; } }

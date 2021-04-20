@@ -1,0 +1,61 @@
+@import "Ginkgo";
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%;
+  margin: 60px 0;
+
+  &.member_share {
+    margin: 0 0 20px 0;
+  }
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+  }
+
+  @include range-width(0, 770px) {
+    margin: 35px 0;
+  }
+}
+
+.img-pic {
+  display: inline-block;
+  width: 100%;
+  max-width: 900px;
+}
+
+.allboxs {
+  display: inline-block;
+  width: 100%;
+}
+
+.order-l {
+  float: left;
+}
+
+.order-r {
+  float: right;
+}
+
+.text-l {
+  text-align: left;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.c-blue {
+  color: rgba(46, 182, 171, 1.00);
+}
+
+.c-black {
+  color: black;
+}
