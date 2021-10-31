@@ -139,7 +139,7 @@ body main .container .news .list .list-item .item-content > .title > h2, body ma
 body main .container .news .list .list-item .item-content > .title > i { margin-top: .75rem; font-size: 24px; }
 body main .container .news .list .list-item .item-content .content { display: none; }
 body main .container .news .list .list-item .item-content .content p { text-align: left; font-size: 16px; color: #636363; }
-body main .container .events .content { display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; }
+body main .container .events .content { display: flex; justify-content: space-around; flex-wrap: wrap; position: relative; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content { flex-direction: column; } }
 body main .container .events .content .day { width: 24%; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content .day { width: 100%; } }
