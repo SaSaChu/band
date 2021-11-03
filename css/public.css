@@ -143,7 +143,7 @@ body main .container .events .content { display: flex; justify-content: space-ar
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content { flex-direction: column; } }
 body main .container .events .content .day { width: 24%; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content .day { width: 100%; } }
-body main .container .events .content .day:nth-child(2) > .events-box:nth-child(1) > .title > h2 { margin-left: 3rem; font-size: 20px; }
+body main .container .events .content .day:nth-child(2) > .events-box:nth-child(1) > .title > h2 { margin-left: 3rem; font-size: 2.4rem; }
 body main .container .events .content .day:nth-child(3) > .events-box:nth-child(2) { margin-top: calc(7rem - 24px); }
 body main .container .events .content .day .events-box { margin-top: 7rem; width: 100%; max-width: 280px; cursor: pointer; }
 @media screen and (max-width: 449px) and (min-width: 0) { body main .container .events .content .day .events-box { margin: 4rem auto 0 auto; } }
