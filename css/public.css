@@ -26,6 +26,8 @@
 
 p { margin: 10px 0; }
 
+.i_note { display: inline-block; font-size: 1.6rem; text-align: left; margin: 20px 0; font-style: normal; float: left; color: #df0073; }
+
 .note_big { display: inline-block; width: 100%; font-size: 5rem; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .note_big { font-size: 3rem; } }
 
